@@ -779,7 +779,7 @@ SUPPORTED PAYMENT METHODS
           </p>
 
           <button className="mt-8 w-full rounded-2xl bg-white/10 hover:bg-white/15 border border-white/10 px-5 py-4 text-sm md:text-base font-bold text-white transition">
-            Claim RM50 Bonus
+            Claim 88 FREE TOKENS
           </button>
         </div>
       </div>
@@ -809,20 +809,20 @@ SUPPORTED PAYMENT METHODS
 
             <div className="text-right">
               <p className="text-5xl md:text-6xl font-black text-raya-gold leading-none">
-                168
+                188
               </p>
               <p className="mt-2 text-xs md:text-sm uppercase tracking-[0.18em] text-white/55">
-                Free Spins
+                FREE TOKENS
               </p>
             </div>
           </div>
 
           <p className="mt-6 text-base md:text-lg font-semibold text-white/80">
-            Activate <span className="text-raya-gold font-black">168 FREE SPINS</span>
+            Activate <span className="text-raya-gold font-black">188 FREE TOKENS</span>
           </p>
 
           <button className="mt-8 w-full rounded-2xl bg-raya-gold text-[#0B1120] hover:brightness-110 px-5 py-4 text-sm md:text-base font-black transition shadow-[0_10px_30px_rgba(212,175,55,0.25)]">
-            Claim RM100 Bonus
+            Claim 188 FREE TOKENS
           </button>
         </div>
       </div>
