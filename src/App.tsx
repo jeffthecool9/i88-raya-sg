@@ -729,64 +729,110 @@ SUPPORTED PAYMENT METHODS
         </div>
       </Section>
 
-      {/* 5. FINAL CTA */}
-      <Section id="final" className="text-center pb-24 md:pb-28">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, margin: '-50px' }}
-          className="glass-panel p-8 md:p-12 border-raya-gold/20 bg-gradient-to-b from-white/[0.06] to-transparent relative overflow-hidden backdrop-blur-xl"
-        >
-          <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-raya-gold to-transparent" />
+    {/* Welcome Reward CTA Section */}
+<section className="relative py-20 md:py-24">
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12">
+      <span className="inline-flex items-center rounded-full border border-raya-gold/30 bg-raya-gold/10 px-4 py-1 text-xs font-bold uppercase tracking-[0.2em] text-raya-gold">
+        New Member Exclusive
+      </span>
 
-       <div className="relative z-10 flex flex-col items-center gap-5 pt-2">
- <img
-  src="/i882.png"
-  alt="i88 Logo"
-  className="w-24 md:w-32 mb-2 opacity-100 brightness-110 drop-shadow-[0_0_22px_rgba(255,255,255,0.28)]"
-/>
+      <h2 className="mt-5 text-4xl md:text-6xl font-black uppercase tracking-tight text-white leading-none">
+        Raya Welcome <span className="text-raya-gold">Reward</span>
+      </h2>
 
-  <h2 className="text-2xl md:text-4xl font-black mb-2 gold-gradient-text uppercase tracking-tight text-center">
-   Are you watching, or are you winning?
-    Try it out with $50 first
-    & gets 88 Tokens!
-  </h2>
+      <p className="mt-4 max-w-2xl mx-auto text-base md:text-lg text-white/70 leading-relaxed">
+        Choose your tier and activate your reward instantly after deposit.
+      </p>
+    </div>
 
-  <motion.a
-    href={DEPOSIT_URL}
-    data-event="cta_final"
-    animate={{
-      boxShadow: [
-        '0 0 0 0px rgba(212, 175, 55, 0)',
-        '0 0 0 15px rgba(212, 175, 55, 0.22)',
-        '0 0 0 30px rgba(212, 175, 55, 0)',
-      ],
-    }}
-    transition={{
-      duration: 2,
-      repeat: Infinity,
-      ease: 'easeInOut',
-    }}
-    className="group relative bg-raya-gold text-raya-blue text-lg font-black px-8 py-4 rounded-xl overflow-hidden shadow-2xl hover:scale-105 active:scale-95 transition-transform glow-shadow"
-  >
-    <span className="relative z-10 flex items-center gap-2">
-      Try Now
-      <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-    </span>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      {/* Starter Card */}
+      <div className="relative rounded-[28px] border border-white/10 bg-white/[0.04] backdrop-blur-xl p-6 md:p-8 shadow-[0_0_40px_rgba(0,0,0,0.25)] overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-white/[0.05] via-transparent to-raya-gold/[0.04]" />
+        <div className="relative z-10">
+          <span className="inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-white/80">
+            Starter
+          </span>
 
-    <motion.div
-      className="absolute inset-0 bg-white/20"
-      animate={{ x: ['-100%', '100%'] }}
-      transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
-    />
-  </motion.a>
-</div>
-        </motion.div>
+          <div className="mt-6 flex items-end justify-between gap-6">
+            <div>
+              <p className="text-3xl md:text-4xl font-black text-white leading-tight">
+                Deposit
+                <br />
+                RM50
+              </p>
+            </div>
 
-        <div className="mt-8 text-[9px] text-white/20 uppercase tracking-[0.4em]">
-          &copy; 2026 Raya Perfect Week. All Rights Reserved.
+            <div className="text-right">
+              <p className="text-5xl md:text-6xl font-black text-raya-gold leading-none">
+                88
+              </p>
+              <p className="mt-2 text-xs md:text-sm uppercase tracking-[0.18em] text-white/55">
+                Free Spins
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-6 text-base md:text-lg font-semibold text-white/80">
+            Activate <span className="text-raya-gold font-black">88 FREE SPINS</span>
+          </p>
+
+          <button className="mt-8 w-full rounded-2xl bg-white/10 hover:bg-white/15 border border-white/10 px-5 py-4 text-sm md:text-base font-bold text-white transition">
+            Claim RM50 Bonus
+          </button>
         </div>
-      </Section>
+      </div>
+
+      {/* Best Value Card */}
+      <div className="relative rounded-[28px] border border-raya-gold/35 bg-gradient-to-b from-raya-gold/[0.10] to-white/[0.04] backdrop-blur-xl p-6 md:p-8 shadow-[0_0_50px_rgba(212,175,55,0.18)] overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.18),transparent_55%)]" />
+        <div className="relative z-10">
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="inline-flex rounded-full border border-raya-gold/30 bg-raya-gold/15 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-raya-gold">
+              Best Value
+            </span>
+
+            <span className="inline-flex rounded-full border border-raya-gold/30 bg-raya-gold/10 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-raya-gold">
+              Most Chosen
+            </span>
+          </div>
+
+          <div className="mt-6 flex items-end justify-between gap-6">
+            <div>
+              <p className="text-3xl md:text-4xl font-black text-white leading-tight">
+                Deposit
+                <br />
+                RM100
+              </p>
+            </div>
+
+            <div className="text-right">
+              <p className="text-5xl md:text-6xl font-black text-raya-gold leading-none">
+                168
+              </p>
+              <p className="mt-2 text-xs md:text-sm uppercase tracking-[0.18em] text-white/55">
+                Free Spins
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-6 text-base md:text-lg font-semibold text-white/80">
+            Activate <span className="text-raya-gold font-black">168 FREE SPINS</span>
+          </p>
+
+          <button className="mt-8 w-full rounded-2xl bg-raya-gold text-[#0B1120] hover:brightness-110 px-5 py-4 text-sm md:text-base font-black transition shadow-[0_10px_30px_rgba(212,175,55,0.25)]">
+            Claim RM100 Bonus
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <p className="mt-6 text-center text-sm md:text-base text-white/55">
+      Valid for new members only. Terms & conditions apply.
+    </p>
+  </div>
+</section>
 
       {/* Sticky CTA */}
       <motion.div
