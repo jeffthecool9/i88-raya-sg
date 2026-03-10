@@ -747,7 +747,7 @@ SUPPORTED PAYMENT METHODS
 />
 
   <h2 className="text-2xl md:text-4xl font-black mb-2 gold-gradient-text uppercase tracking-tight text-center">
-    Still Not Decide yet?
+   Are you watching, or are you winning?
     Try it out with $50 first
     & gets 88 Tokens!
   </h2>
@@ -803,7 +803,7 @@ SUPPORTED PAYMENT METHODS
                   Raya Perfect Week
                 </p>
                 <p className="text-sm md:text-base font-black text-white leading-tight truncate">
-                  Start Now
+                  Start Soon
                 </p>
               </div>
 
