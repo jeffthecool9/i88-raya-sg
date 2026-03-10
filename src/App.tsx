@@ -160,7 +160,7 @@ const CountdownTimer = () => {
 };
 
 const PaymentRiver = () => {
-  const logos = ['/ocbc.jpg', '/posb.jpg', '/uob.png', '/dbs.png', '/paynow.jpg'];
+  const logos = ['/ocbc.jpg', '/posb.jpg', '/uob.png', '/dbs.png', '/paynow.jpg', '/bitcoin.png', '/tether.png'];
   const loop = [...logos, ...logos];
 
   return (
