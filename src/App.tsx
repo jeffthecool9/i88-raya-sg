@@ -769,13 +769,13 @@ SUPPORTED PAYMENT METHODS
                 88
               </p>
               <p className="mt-2 text-xs md:text-sm uppercase tracking-[0.18em] text-white/55">
-                Free Spins
+                FREE TOKENS
               </p>
             </div>
           </div>
 
           <p className="mt-6 text-base md:text-lg font-semibold text-white/80">
-            Activate <span className="text-raya-gold font-black">88 FREE SPINS</span>
+            Activate <span className="text-raya-gold font-black">88 FREE TOKENS</span>
           </p>
 
           <button className="mt-8 w-full rounded-2xl bg-white/10 hover:bg-white/15 border border-white/10 px-5 py-4 text-sm md:text-base font-bold text-white transition">
