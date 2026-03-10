@@ -729,108 +729,79 @@ SUPPORTED PAYMENT METHODS
         </div>
       </Section>
 
-    {/* Welcome Reward CTA Section */}
-<section className="relative py-20 md:py-24">
-  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-12">
-      <span className="inline-flex items-center rounded-full border border-raya-gold/30 bg-raya-gold/10 px-4 py-1 text-xs font-bold uppercase tracking-[0.2em] text-raya-gold">
-        New Member Exclusive
-      </span>
+  {/* Single CTA Welcome Reward Box */}
+<section className="relative py-16 md:py-20">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="relative overflow-hidden rounded-[32px] border border-raya-gold/20 bg-gradient-to-br from-[#1f5f1f]/90 via-[#145214]/90 to-[#0d3b0d]/95 shadow-[0_0_60px_rgba(0,0,0,0.35)] backdrop-blur-xl p-6 md:p-10">
+      
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.12),transparent_45%)]" />
+      
+      <div className="relative z-10 text-center">
+        <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white">
+          Welcome <span className="text-raya-gold">Reward</span>
+        </h2>
 
-      <h2 className="mt-5 text-4xl md:text-6xl font-black uppercase tracking-tight text-white leading-none">
-        Raya Welcome <span className="text-raya-gold">Reward</span>
-      </h2>
+        <p className="mt-4 text-base md:text-lg text-white/75 max-w-2xl mx-auto">
+          Choose your tier and activate your reward instantly after deposit.
+        </p>
 
-      <p className="mt-4 max-w-2xl mx-auto text-base md:text-lg text-white/70 leading-relaxed">
-        Choose your tier and activate your reward instantly after deposit.
-      </p>
-    </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-      {/* Starter Card */}
-      <div className="relative rounded-[28px] border border-white/10 bg-white/[0.04] backdrop-blur-xl p-6 md:p-8 shadow-[0_0_40px_rgba(0,0,0,0.25)] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-white/[0.05] via-transparent to-raya-gold/[0.04]" />
-        <div className="relative z-10">
-          <span className="inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-white/80">
-            Starter
-          </span>
-
-          <div className="mt-6 flex items-end justify-between gap-6">
-            <div>
-              <p className="text-3xl md:text-4xl font-black text-white leading-tight">
-                Deposit
-                <br />
-                RM50
+        <div className="mt-8 space-y-4">
+          <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.05] px-5 py-4 md:px-6 md:py-5">
+            <div className="text-left">
+              <p className="text-xl md:text-2xl font-black text-white">
+                Deposit RM50
+              </p>
+              <p className="text-sm md:text-base text-white/60">
+                Starter reward
               </p>
             </div>
-
             <div className="text-right">
-              <p className="text-5xl md:text-6xl font-black text-raya-gold leading-none">
+              <p className="text-3xl md:text-4xl font-black text-raya-gold leading-none">
                 88
               </p>
-              <p className="mt-2 text-xs md:text-sm uppercase tracking-[0.18em] text-white/55">
+              <p className="mt-1 text-xs md:text-sm uppercase tracking-[0.18em] text-white/55">
                 FREE TOKENS
               </p>
             </div>
           </div>
 
-          <p className="mt-6 text-base md:text-lg font-semibold text-white/80">
-            Activate <span className="text-raya-gold font-black">88 FREE TOKENS</span>
-          </p>
-
-          <button className="mt-8 w-full rounded-2xl bg-white/10 hover:bg-white/15 border border-white/10 px-5 py-4 text-sm md:text-base font-bold text-white transition">
-            Claim 88 FREE TOKENS
-          </button>
-        </div>
-      </div>
-
-      {/* Best Value Card */}
-      <div className="relative rounded-[28px] border border-raya-gold/35 bg-gradient-to-b from-raya-gold/[0.10] to-white/[0.04] backdrop-blur-xl p-6 md:p-8 shadow-[0_0_50px_rgba(212,175,55,0.18)] overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.18),transparent_55%)]" />
-        <div className="relative z-10">
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="inline-flex rounded-full border border-raya-gold/30 bg-raya-gold/15 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-raya-gold">
-              Best Value
-            </span>
-
-            <span className="inline-flex rounded-full border border-raya-gold/30 bg-raya-gold/10 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-raya-gold">
-              Most Chosen
-            </span>
-          </div>
-
-          <div className="mt-6 flex items-end justify-between gap-6">
-            <div>
-              <p className="text-3xl md:text-4xl font-black text-white leading-tight">
-                Deposit
-                <br />
-                RM100
+          <div className="flex items-center justify-between rounded-2xl border border-raya-gold/25 bg-raya-gold/[0.08] px-5 py-4 md:px-6 md:py-5 shadow-[0_0_30px_rgba(212,175,55,0.08)]">
+            <div className="text-left">
+              <div className="mb-2 flex flex-wrap gap-2">
+                <span className="rounded-full border border-raya-gold/30 bg-raya-gold/10 px-3 py-1 text-[10px] md:text-[11px] font-bold uppercase tracking-[0.18em] text-raya-gold">
+                  Best Value
+                </span>
+                <span className="rounded-full border border-raya-gold/30 bg-raya-gold/10 px-3 py-1 text-[10px] md:text-[11px] font-bold uppercase tracking-[0.18em] text-raya-gold">
+                  Most Chosen
+                </span>
+              </div>
+              <p className="text-xl md:text-2xl font-black text-white">
+                Deposit RM100
+              </p>
+              <p className="text-sm md:text-base text-white/60">
+                Higher reward value
               </p>
             </div>
-
             <div className="text-right">
-              <p className="text-5xl md:text-6xl font-black text-raya-gold leading-none">
+              <p className="text-3xl md:text-4xl font-black text-raya-gold leading-none">
                 188
               </p>
-              <p className="mt-2 text-xs md:text-sm uppercase tracking-[0.18em] text-white/55">
+              <p className="mt-1 text-xs md:text-sm uppercase tracking-[0.18em] text-white/55">
                 FREE TOKENS
               </p>
             </div>
           </div>
-
-          <p className="mt-6 text-base md:text-lg font-semibold text-white/80">
-            Activate <span className="text-raya-gold font-black">188 FREE TOKENS</span>
-          </p>
-
-          <button className="mt-8 w-full rounded-2xl bg-raya-gold text-[#0B1120] hover:brightness-110 px-5 py-4 text-sm md:text-base font-black transition shadow-[0_10px_30px_rgba(212,175,55,0.25)]">
-            Claim 188 FREE TOKENS
-          </button>
         </div>
+
+        <button className="mt-8 w-full md:w-auto min-w-[280px] rounded-2xl bg-raya-gold text-[#0B1120] hover:brightness-110 px-8 py-4 text-base md:text-lg font-black transition shadow-[0_12px_35px_rgba(212,175,55,0.28)]">
+          Claim Your Welcome Bonus
+        </button>
+
+        <p className="mt-5 text-sm md:text-base text-white/55">
+          Valid for new members only. Terms & conditions apply.
+        </p>
       </div>
     </div>
-
-    <p className="mt-6 text-center text-sm md:text-base text-white/55">
-      Valid for new members only. Terms & conditions apply.
-    </p>
   </div>
 </section>
 
