@@ -760,13 +760,6 @@ SUPPORTED PAYMENT METHODS
               </p>
             </div>
           </div>
-
-          <div className="flex items-center justify-between rounded-2xl border border-raya-gold/25 bg-raya-gold/[0.08] px-5 py-4 md:px-6 md:py-5 shadow-[0_0_30px_rgba(212,175,55,0.08)]">
-            <div className="text-left">
-              <div className="mb-2 flex flex-wrap gap-2">
-            </div>
-           
-          </div>
         </div>
 
         <button className="mt-8 w-full md:w-auto min-w-[280px] rounded-2xl bg-raya-gold text-[#0B1120] hover:brightness-110 px-8 py-4 text-base md:text-lg font-black transition shadow-[0_12px_35px_rgba(212,175,55,0.28)]">
