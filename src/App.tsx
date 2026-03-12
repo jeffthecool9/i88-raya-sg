@@ -749,16 +749,12 @@ SUPPORTED PAYMENT METHODS
           <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.05] px-5 py-4 md:px-6 md:py-5">
             <div className="text-left">
               <p className="text-xl md:text-2xl font-black text-white">
-                Deposit RM100
+                Deposit $100
               </p>
               <p className="text-sm md:text-base text-white/60">
                 Starter reward
               </p>
             </div>
-            <div className="text-right">
-              <p className="text-3xl md:text-4xl font-black text-raya-gold leading-none">
-                88
-              </p>
               <p className="mt-1 text-xs md:text-sm uppercase tracking-[0.18em] text-white/55">
                 FREE TOKENS
               </p>
