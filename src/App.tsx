@@ -759,7 +759,6 @@ SUPPORTED PAYMENT METHODS
                 10-20% & 50 TOKENS
               </p>
             </div>
-          </div>
         </div>
 
         <button className="mt-8 w-full md:w-auto min-w-[280px] rounded-2xl bg-raya-gold text-[#0B1120] hover:brightness-110 px-8 py-4 text-base md:text-lg font-black transition shadow-[0_12px_35px_rgba(212,175,55,0.28)]">
