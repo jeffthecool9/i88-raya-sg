@@ -20,7 +20,7 @@ const DAILY_REWARDS = [
   { day: 4, date: '22 Mar', bonus: '20% Bonus', tokens: '50 Tokens', spins: '', highlight: true },
   { day: 5, date: '23 Mar', bonus: '10% Bonus', tokens: '50 Tokens', spins: '', highlight: true },
   { day: 6, date: '24 Mar', bonus: '10% Bonus', tokens: '50 Tokens', spins: '', highlight: true },
-  { day: 7, date: '25 Mar', bonus: 'Get up to $588', tokens: '', spins: 'Get Credit on 26 Mar', highlight: true },
+  { day: 7, date: '25 Mar', bonus: 'Get up to $588', tokens: '', spins: '10% Bonus & 50 Tokens', highlight: true },
 ];
 
 // --- Components ---
@@ -749,7 +749,7 @@ SUPPORTED PAYMENT METHODS
           <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.05] px-5 py-4 md:px-6 md:py-5">
             <div className="text-left">
               <p className="text-xl md:text-2xl font-black text-white">
-                Deposit RM50
+                Deposit RM100
               </p>
               <p className="text-sm md:text-base text-white/60">
                 Starter reward
@@ -768,27 +768,12 @@ SUPPORTED PAYMENT METHODS
           <div className="flex items-center justify-between rounded-2xl border border-raya-gold/25 bg-raya-gold/[0.08] px-5 py-4 md:px-6 md:py-5 shadow-[0_0_30px_rgba(212,175,55,0.08)]">
             <div className="text-left">
               <div className="mb-2 flex flex-wrap gap-2">
-                <span className="rounded-full border border-raya-gold/30 bg-raya-gold/10 px-3 py-1 text-[10px] md:text-[11px] font-bold uppercase tracking-[0.18em] text-raya-gold">
-                  Best Value
-                </span>
-                <span className="rounded-full border border-raya-gold/30 bg-raya-gold/10 px-3 py-1 text-[10px] md:text-[11px] font-bold uppercase tracking-[0.18em] text-raya-gold">
-                  Most Chosen
-                </span>
-              </div>
-              <p className="text-xl md:text-2xl font-black text-white">
-                Deposit RM100
-              </p>
-              <p className="text-sm md:text-base text-white/60">
-                Higher reward value
-              </p>
             </div>
             <div className="text-right">
               <p className="text-3xl md:text-4xl font-black text-raya-gold leading-none">
-                188
+               10-20% & 50 TOKENS
               </p>
-              <p className="mt-1 text-xs md:text-sm uppercase tracking-[0.18em] text-white/55">
-                FREE TOKENS
-              </p>
+             
             </div>
           </div>
         </div>
