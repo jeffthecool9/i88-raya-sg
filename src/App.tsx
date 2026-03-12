@@ -756,7 +756,7 @@ SUPPORTED PAYMENT METHODS
               </p>
             </div>
               <p className="mt-1 text-xs md:text-sm uppercase tracking-[0.18em] text-white/55">
-                FREE TOKENS
+                10-20% & 50 TOKENS
               </p>
             </div>
           </div>
@@ -765,12 +765,7 @@ SUPPORTED PAYMENT METHODS
             <div className="text-left">
               <div className="mb-2 flex flex-wrap gap-2">
             </div>
-            <div className="text-right">
-              <p className="text-3xl md:text-4xl font-black text-raya-gold leading-none">
-               10-20% & 50 TOKENS
-              </p>
-             
-            </div>
+           
           </div>
         </div>
 
