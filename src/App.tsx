@@ -766,7 +766,7 @@ SUPPORTED PAYMENT METHODS
         </button>
 
         <p className="mt-5 text-sm md:text-base text-white/55">
-          Valid for new members only. Terms & conditions apply
+         Terms & conditions apply
         </p>
       </div>
     </div>
