@@ -676,7 +676,7 @@ export default function App() {
         </div>
       </Section>
 
-      {/* 3. QUICK RULES ONLY */}
+     {/* 3. QUICK RULES ONLY */}
       <Section id="tiers-rules" className="block md:hidden bg-raya-emerald/5">
         <div className="max-w-3xl mx-auto">
           <div className="glass-panel p-6 md:p-8 bg-white/[0.05] border-raya-emerald/20 backdrop-blur-xl rounded-[2rem]">
