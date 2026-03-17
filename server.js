@@ -1,11 +1,18 @@
 import express from "express";
+import cors from "cors";
 
 const app = express();
+
+app.use(cors());
 app.use(express.json({ limit: "1mb" }));
 
 const PIXEL_ID = "783027081098083";
-const ACCESS_TOKEN = "EAFYzF3XBTyUBQ2trQKtZBuKG8sqo6IxXCzeRSZCkVAT8h8hVXRViTC4ONdZAsYyc0zacR7hU1uguSClQZBJoZBqNWpg71J53il1AFZBFwZB40Nhvq01CfpRSVsihwykJ0rBYc5QWWGKWajTNw5bEOvhj5vFqb3OhdxCDTiaATetZBTMjfeNAQ9CAnmnhFZCJmE4orDwZDZD";
-const API_VERSION = "v21.0"; // use your current Meta Graph API version
+const ACCESS_TOKEN = process.env.EAFYzF3XBTyUBQ7OZB8Pf53lpZCx8YxiVbXS8ZBqtSJKrKPltaVFxVsKKm2bpckXGMhlZACxNTZBq1VhI6c3n2SAJYBJpZASuEg9kzZB8Yogb1dZCm3ZCoTZAMlyHHyLLQuVJNXLzDAnxcdp9cYZALq7XW84Qu4ZAwUtEVaDuQR3ZBSVnByr8U8gNwz47H75LXCZCVG5oB6RAZDZD;
+const API_VERSION = "v21.0";
+
+if (!ACCESS_TOKEN) {
+  throw new Error("META_ACCESS_TOKEN is missing");
+}
 
 app.post("/api/meta/lead", async (req, res) => {
   try {
@@ -18,7 +25,7 @@ app.post("/api/meta/lead", async (req, res) => {
           event_time: Math.floor(Date.now() / 1000),
           action_source: "website",
           event_id: eventId,
-         event_source_url: eventSourceUrl || "https://www.i88rayamy26.com/",
+          event_source_url: eventSourceUrl || "https://www.i88rayamy26.com/",
           user_data: {
             fbp: fbp || undefined,
             fbc: fbc || undefined,
@@ -43,12 +50,15 @@ app.post("/api/meta/lead", async (req, res) => {
     const result = await response.json();
 
     if (!response.ok) {
+      console.error("Meta CAPI error:", result);
       return res.status(500).json(result);
     }
 
-    res.json(result);
+    console.log("Meta CAPI success:", result);
+    return res.json(result);
   } catch (error) {
-    res.status(500).json({ error: String(error) });
+    console.error("Server error:", error);
+    return res.status(500).json({ error: String(error) });
   }
 });
 
