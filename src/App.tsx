@@ -13,6 +13,48 @@ import {
 const EVENT_END_DATE = new Date('2026-03-25T23:59:59');
 const DEPOSIT_URL = 'https://www.palacehub8.com/jv4Ajnn8';
 
+declare global {
+  interface Window {
+    fbq?: (...args: any[]) => void;
+  }
+}
+
+const getCookie = (name: string) => {
+  const match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+  return match ? match[2] : null;
+};
+
+const handleRegisterClick = async () => {
+  const eventId = `lead_${Date.now()}`;
+  const targetUrl = "https://www.palacehub8.com/jv4Ajnn8";
+
+  try {
+    // Browser event
+    if (window.fbq) {
+      window.fbq("track", "Lead", {}, { eventID: eventId });
+    }
+
+    // Server-side CAPI event
+    await fetch("http://localhost:3001/api/meta/lead", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        eventId,
+        eventSourceUrl: window.location.href,
+        fbp: getCookie("_fbp"),
+        fbc: getCookie("_fbc"),
+        // testEventCode: "TEST12345", // use only when testing in Meta Test Events
+      }),
+    });
+  } catch (error) {
+    console.error("Meta tracking error:", error);
+  }
+
+  // Redirect user after tracking
+  window.location.href = targetUrl;
+};
 const DAILY_REWARDS = [
   { day: 1, date: '19 Mar', bonus: '10% Bonus', tokens: '50 Tokens', spins: '', highlight: true, rayaSpecial: false },
   { day: 2, date: '20 Mar', bonus: '10% Bonus', tokens: '50 Tokens', spins: '', highlight: true, rayaSpecial: false },
