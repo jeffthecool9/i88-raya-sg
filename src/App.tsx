@@ -827,7 +827,7 @@ export default function App() {
         </div>
       </Section>
 
-     {/* Raya Bonus Info Box */}
+  {/* Single CTA Welcome Reward Box */}
 <section className="relative py-16 md:py-20">
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="relative overflow-hidden rounded-[32px] border border-raya-gold/20 bg-gradient-to-br from-[#1f5f1f]/90 via-[#145214]/90 to-[#0d3b0d]/95 shadow-[0_0_60px_rgba(0,0,0,0.35)] backdrop-blur-xl p-6 md:p-10">
@@ -842,7 +842,8 @@ export default function App() {
           Daily deposit rewards for the Raya Perfect Week event
         </p>
 
-          <div className="rounded-2xl border border-white/10 bg-white/[0.05] px-5 py-4 text-left">
+        <div className="mt-8">
+          <div className="rounded-2xl border border-white/10 bg-white/[0.05] px-5 py-4 text-left max-w-md mx-auto">
             <p className="text-[11px] uppercase tracking-[0.22em] text-white/45 font-black">
               Reward Range
             </p>
@@ -867,39 +868,26 @@ export default function App() {
   </div>
 </section>
 
-      {/* Sticky CTA */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.2, duration: 0.6, ease: 'easeOut' }}
-        className="fixed bottom-4 left-1/2 -translate-x-1/2 z-[60] px-4 w-full max-w-[420px] pointer-events-none"
-      >
-        <div className="pointer-events-auto mx-auto">
-          <div className="rounded-2xl border border-raya-gold/25 bg-[rgba(8,30,10,0.72)] backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.35)] px-3 py-3 md:px-4 md:py-3">
-            <div className="flex items-center gap-3">
-              <div className="min-w-0 flex-1">
-                <p className="text-[10px] md:text-[11px] uppercase tracking-[0.22em] text-raya-gold/80 font-black">
-                  Raya Perfect Week
-                </p>
-                <p className="text-sm md:text-base font-black text-white leading-tight truncate">
-                  Start NOW
-                </p>
-              </div>
-
-              <motion.a
-                href={DEPOSIT_URL}
-                data-event="cta_sticky"
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.96 }}
-                className="shrink-0 inline-flex items-center gap-2 rounded-xl bg-raya-gold text-raya-blue font-black text-sm md:text-base px-4 py-3 shadow-lg"
-              >
-               Register
-                <ChevronRight className="w-4 h-4" />
-              </motion.a>
-            </div>
-          </div>
+{/* Sticky CTA */}
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1.2, duration: 0.6, ease: 'easeOut' }}
+  className="fixed bottom-4 left-1/2 -translate-x-1/2 z-[60] px-4 w-full max-w-[420px] pointer-events-none"
+>
+  <div className="pointer-events-auto mx-auto">
+    <div className="rounded-2xl border border-raya-gold/25 bg-[rgba(8,30,10,0.72)] backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.35)] px-4 py-3">
+      <div className="flex items-center gap-3">
+        <span className="inline-block w-2.5 h-2.5 rounded-full bg-raya-gold shadow-[0_0_10px_rgba(212,175,55,0.45)]" />
+        <div className="min-w-0 flex-1 text-left">
+          <p className="text-[10px] md:text-[11px] uppercase tracking-[0.22em] text-raya-gold/80 font-black">
+            Raya Perfect Week
+          </p>
+          <p className="text-sm md:text-base font-black text-white leading-tight truncate">
+            Registration opens soon
+          </p>
         </div>
-      </motion.div>
+      </div>
     </div>
-  );
-}
+  </div>
+</motion.div>
