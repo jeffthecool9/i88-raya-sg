@@ -732,10 +732,6 @@ export default function App() {
                 <span>Deposit daily for 7 days to unlock Grand Credit</span>
               </li>
 
-              <li className="flex items-start gap-3">
-                <AlertCircle className="w-4 h-4 text-raya-gold shrink-0 mt-1" />
-                <span>8x turnover applies to all bonuses</span>
-              </li>
 
               <li className="flex items-start gap-3">
                 <Clock className="w-4 h-4 text-raya-gold shrink-0 mt-1" />
@@ -768,7 +764,7 @@ export default function App() {
             {
               step: '2',
               title: 'Deposit for 7 Days',
-              desc: 'Maintain a daily deposit streak for 7 consecutive days to unlock the exclusive Grand Credit bonus.',
+              desc: 'Maintain a daily deposit streak for 7 consecutive days to unlock the exclusive Grand Credit bonus, deposit each day also get bonus!',
               glow: 'bg-raya-gold/10',
             },
           ].map((item, idx) => (
