@@ -856,7 +856,7 @@ export default function App() {
         <div className="mt-8 flex justify-center">
           <div className="inline-flex items-center gap-3 rounded-2xl border border-raya-gold/20 bg-white/[0.04] px-5 py-3 text-sm md:text-base text-white/75 backdrop-blur-md">
             <span className="inline-block w-2.5 h-2.5 rounded-full bg-raya-gold shadow-[0_0_10px_rgba(212,175,55,0.45)]" />
-            Event registration opens soon
+            Event registration opens NOW
           </div>
         </div>
 
