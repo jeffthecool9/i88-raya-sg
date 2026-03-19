@@ -846,16 +846,6 @@ export default function App() {
           Daily deposit rewards for the Raya Perfect Week event
         </p>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="rounded-2xl border border-white/10 bg-white/[0.05] px-5 py-4 text-left">
-            <p className="text-[11px] uppercase tracking-[0.22em] text-white/45 font-black">
-              Minimum Daily Deposit
-            </p>
-            <p className="mt-2 text-xl md:text-2xl font-black text-white">
-              $100
-            </p>
-          </div>
-
           <div className="rounded-2xl border border-white/10 bg-white/[0.05] px-5 py-4 text-left">
             <p className="text-[11px] uppercase tracking-[0.22em] text-white/45 font-black">
               Reward Range
