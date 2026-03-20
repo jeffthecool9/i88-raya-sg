@@ -498,27 +498,31 @@ export default function App() {
               </p>
 
               <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8" />
+<div className="flex flex-col items-center gap-6">
+  <div className="flex flex-col items-center gap-2">
+    <span className="text-[10px] uppercase tracking-[0.4em] text-raya-gold/70 font-black">
+      Event Ends In
+    </span>
+    <CountdownTimer />
+  </div>
 
-              <div className="flex flex-col items-center gap-6">
-                <div className="flex flex-col items-center gap-2">
-                  <span className="text-[10px] uppercase tracking-[0.4em] text-raya-gold/70 font-black">
-                    Event Ends In
-                  </span>
-                  <CountdownTimer />
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+  <div className="mt-2 flex justify-center">
+    <motion.button
+      onClick={handleRegisterClick}
+      data-event="cta_hero"
+      whileHover={{ scale: 1.05, y: -2 }}
+      whileTap={{ scale: 0.96 }}
+      className="relative inline-flex items-center justify-center rounded-2xl px-8 md:px-10 py-3.5 md:py-4 text-base md:text-lg font-black text-[#0B1120] bg-raya-gold shadow-[0_15px_40px_rgba(212,175,55,0.35)] overflow-hidden transition"
+    >
+      <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 hover:opacity-100 transition duration-700" />
+      <span className="relative z-10">Register Now</span>
+    </motion.button>
+  </div>
 
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2.4, repeat: Infinity }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/18"
-        >
-          <ChevronDown className="w-8 h-8" />
-        </motion.div>
-      </section>
+  <p className="text-[11px] md:text-xs uppercase tracking-[0.22em] text-white/45 font-bold">
+    Start your 7-day reward streak
+  </p>
+</div>
 
       {/* Payment Method River */}
       <Section id="payment-river" className="pt-0 md:pt-2 pb-6 md:pb-10">
